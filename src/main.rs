@@ -1,8 +1,12 @@
 mod concepts;
 mod ownership;
+mod structs; 
 
 use concepts::{comments, control_flow, data_types, functions, variables_and_mutability};
 use ownership::{ownership as ownership_concept, reference_and_borrowing};
+use structs::{defination};
+
+use crate::structs::method;
 
 fn main() {
     println!("Concepts");
@@ -29,4 +33,12 @@ fn main() {
 
     // Reference And Borrowing
     reference_and_borrowing::main();
+
+    println!("Struct");
+    
+    // Defination 
+    defination::main();
+
+    method::main();
+
 }

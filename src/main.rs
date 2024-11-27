@@ -1,12 +1,14 @@
 mod concepts;
+mod enums;
 mod ownership;
-mod structs; 
+mod structs;
 
 use concepts::{comments, control_flow, data_types, functions, variables_and_mutability};
+use enums::enums as enumeration;
 use ownership::{ownership as ownership_concept, reference_and_borrowing};
-use structs::{defination};
+use structs::{defination, method};
 
-use crate::structs::method;
+use crate::enums::match_op;
 
 fn main() {
     println!("Concepts");
@@ -35,10 +37,15 @@ fn main() {
     reference_and_borrowing::main();
 
     println!("Struct");
-    
-    // Defination 
+
+    // Defination
     defination::main();
 
     method::main();
 
+    println!("Enum");
+
+    enumeration::main();
+
+   match_op::main(); 
 }
